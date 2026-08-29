@@ -12,3 +12,7 @@ tiktoken
 fastapi
 uvicorn
 requests
+langchain_huggingface
+transformers
+torch
+accelerate
