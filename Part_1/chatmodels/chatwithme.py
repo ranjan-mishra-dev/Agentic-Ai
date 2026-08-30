@@ -9,6 +9,8 @@ model = ChatGroq(model="qwen/qwen3.6-27b")
 # types of achieve this memory: using LIST(where we keeping & feeding prev chat), messages 
 # dis of using list is it can reach a limit approx to ur left ram size and it is not a sustainable way, that's why we have messages in langchain
 
+
+#using list like this called short term memory that leads to infinite memory growing and api cost increase over time
 message_history = []
 print("---to exit enter 0 ---")
 while True:
