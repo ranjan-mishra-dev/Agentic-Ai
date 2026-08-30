@@ -16,3 +16,4 @@ langchain_huggingface
 transformers
 torch
 accelerate
+streamlit

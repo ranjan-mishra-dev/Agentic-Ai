@@ -13,9 +13,9 @@ llm = HuggingFacePipeline.from_model_id(
 )
 
 model = ChatHuggingFace(llm=llm)
-res = model.invoke('where is india')
+res = model.invoke('when india won world cup t20 in cricket')
 
-print(res)
+print(res.content)
 print(model)
 
 # // also i got to know about gated vs ungated and quantized model
