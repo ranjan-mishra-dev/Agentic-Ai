@@ -6,8 +6,16 @@ from langchain_openai import ChatOpenAI
 
 from langchain_mistralai import ChatMistralAI
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
 from langchain_groq import ChatGroq
+
+llm = HuggingFaceEndpoint(
+    repo_id="deepseek-ai/DeepSeek-R1-0528",
+    task="text-generation",
+)
+
+# model = ChatHuggingFace(llm=llm)
 
 
 # model = init_chat_model("gpt-5.4-mini");

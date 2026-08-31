@@ -13,7 +13,7 @@ llm = HuggingFacePipeline.from_model_id(
 )
 
 model = ChatHuggingFace(llm=llm)
-res = model.invoke('when india won world cup t20 in cricket')
+res = model.invoke('who is ceo of google')
 
 print(res.content)
 print(model)
